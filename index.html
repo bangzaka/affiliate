@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Program</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'TikTokTextRegular';
+            src: url('./assets/fonts/TikTokText-Regular.ttf') format('truetype'),
+                 url('./assets/fonts/TikTokText-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'TikTokTextMedium';
+            src: url('./assets/fonts/TikTokText-Medium.ttf') format('truetype'),
+                 url('./assets/fonts/TikTokText-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'TikTokTextBold';
+            src: url('./assets/fonts/TikTokText-Bold.ttf') format('truetype'),
+            url('./assets/fonts/TikTokText-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'TikTokTextRegular', sans-serif;
+        }
+
+        .font-medium {
+            font-family: 'TikTokTextMedium', sans-serif;
+        }
+
+        .font-bold {
+            font-family: 'TikTokTextBold', sans-serif;
+        }
+
+        .section-text {
+            font-size: 1.25rem; /* Default size */
+        }
+
+        @media (min-width: 768px) {
+            .section-text {
+                font-size: 1.5rem; /* Medium size */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .section-text {
+                font-size: 2rem; /* Large size */
+            }
+        }
+
+        .image-custom {
+            margin: 20px auto; /* Adds spacing around the image */
+            max-width: 70%; /* Restricts image size */
+            display: block; /* Centers image horizontally */
+        }
+        @media (max-width: 768px) {
+            .center-mobile {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+   <!-- Navbar -->
+   <nav class="bg-black shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="#" class="text-xl font-bold text-white">Mydasteran</a>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="#Ngonten" class="text-gray-100 font-bold hover:text-blue-600">Ngonten</a></li>
+            <li><a href="#Keuntungan" class="text-gray-100 font-bold hover:text-blue-600">Benefit</a></li>
+            <li><a href="#Gabung" class="text-gray-100 font-bold hover:text-blue-600">Gabung</a></li>
+        </ul>
+        <button class="md:hidden flex items-center text-gray-100" id="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+    <!-- Mobile Menu -->
+    <ul class="md:hidden hidden bg-black shadow-md" id="mobile-menu">
+        <li><a href="#Ngonten" class="block px-4 py-2 text-gray-100 font-bold hover:bg-blue-600">Ngonten</a></li>
+        <li><a href="#Keuntungan" class="block px-4 py-2 text-gray-100 font-bold hover:bg-blue-600">Benefit</a></li>
+        <li><a href="#Gabung" class="block px-4 py-2 text-gray-100 font-bold hover:bg-blue-600">Gabung</a></li>
+    </ul>
+</nav>
+
+    <!-- Section -->
+    <section id="Ngonten" class="py-12 md:py-24 bg-cover bg-center" style="background-image: url('./assets/images/bg.jpg');">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center center-mobile">
+            <div class="md:w-1/2">
+                <h1 class="text-3xl md:text-6xl font-bold text-white mb-6 section-text">Daster Kece, Konten Auto FYP!</h1>
+                <p class="text-white mb-8 font-medium section-text"> Pakai daster cantik, bikin konten, followers auto nanya beli di mana.</p>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <img src="./assets/images/affiliate.png" alt="Affiliate Program" class="image-custom">
+            </div>
+        </div>
+    </section>
+   <!-- Section Keuntungan -->
+   <section id="Keuntungan" class="py-12 md:py-24 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-6">Keuntungan Join TikTok Affiliate Program di Mydasteran</h2>
+        <p class="text-gray-600 mb-8 font-medium">Raih penghasilan tambahan dengan mudah dan cepat!</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <img src="./assets/images/cuan.png" alt="Komisi Tinggi" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-4">Komisi Gede</h3>
+                <p class="text-gray-600">Dapet 15-20% dari tiap penjualan. Semakin rajin bikin konten, makin gede cuannya!</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <img src="./assets/images/stock.png" alt="Support Konten" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-4">Modal Nol, Untung Pol!</h3>
+                <p class="text-gray-600">Nggak perlu stok barang! biar kami yang produksi, kamu cukup Ngonten pake daster, langsung untung!</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <img src="./assets/images/laris.png" alt="Laporan Real-Time" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-4">Produk Laris Manis</h3>
+                <p class="text-gray-600">Daster bukan lagi barang sekunder, tapi udah semi primer dan jadi incaran, bikin followers susah nolak buat beli.</p>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Section Share -->
+<section id="Gabung" class="py-12 md:py-24 bg-cover bg-center bg-red-600" style="background-image: url('./assets/images/bg2.png');">
+    <div class="container mx-auto px-4 flex flex-col items-center text-center">
+        <!-- Gambar di atas untuk mode mobile -->
+        <div class="mb-6">
+            <img src="./assets/images/ilustrasi.png" alt="Affiliate Program" class="image-custom">
+        </div>
+        <!-- Teks dan Tombol -->
+        <div class="md:w-1/2">
+            <h1 class="text-3xl md:text-6xl font-bold text-white mb-6 section-text">
+                Konten Cuma Dasteran, Cuan Gakk Mainan!
+            </h1>
+            <p class="text-white mb-8 font-medium section-text">
+                Join Affiliate Mydasteran, Bikin konten dasteran, cuannya gak Ketulungan!
+            </p>
+            <a href="#" class="bg-white text-black px-12 py-4 rounded-lg text-lg font-bold hover:bg-red-700">
+                Gabung Sekarang
+            </a>
+        </div>
+    </div>
+</section>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    <!-- Footer Section -->
+<footer class="w-full bg-black py-4">
+    <div class="text-center text-sm text-white">
+      © 2025 Mydasteran. All rights reserved.
+    </div>
+    </footer>
+</body>
+</html>
